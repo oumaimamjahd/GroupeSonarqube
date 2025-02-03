@@ -1,0 +1,69 @@
+composer init
+---------------------------------
+composer require --dev phpunit/phpunit
+--------------------------------------------
+pour cree phpunit.xml:
+php vendor/bin/phpunit --generate-configuration
+-----------------------------------------------------------
+cree doddier test:
+mkdir tests
+------------------------------------------
+Explication :
+src/MathOperations.php : Cette classe contient plusieurs méthodes mathématiques : addition, soustraction, multiplication et division. Elle lance une exception si on essaie de diviser par zéro.
+
+tests/MathOperationsTest.php : Ce fichier contient des tests unitaires pour les méthodes de la classe MathOperations. Les tests vérifient le bon fonctionnement des opérations et gèrent le cas d'erreur lors de la division par zéro.
+
+composer.json : Ce fichier contient les dépendances nécessaires pour PHPUnit.
+
+phpunit.xml : Il s'agit du fichier de configuration pour PHPUnit, qui définit où se trouvent les tests.
+----------------------------------------------------------
+
+
+Configurez Xdebug dans php.ini :
+
+ini
+Copier le code
+[xdebug]
+zend_extension=xdebug
+xdebug.mode=coverage
+xdebug.start_with_request=yes
+Exécuter PHPUnit avec la couverture de code :
+
+bash
+Copier le code
+php vendor/bin/phpunit --coverage-html coverage
+Cela génère un rapport de couverture dans le dossier coverage.
+----------------------------------------------------------------------------
+Créer un projet dans SonarQube :
+
+Connectez-vous à SonarQube.
+Créez un projet et notez le projectKey et le token.
+Créer un fichier sonar-project.properties : À la racine du projet, créez ce fichier :
+
+properties
+Copier le code
+sonar.projectKey=phpunittest
+sonar.sources=src
+sonar.tests=tests
+sonar.php.coverage.reportPaths=coverage/clover.xml
+sonar.host.url=http://localhost:9000
+sonar.login=<your-token>
+--------------------------------------------------
+vendor\bin\phpunit --coverage-html=coverage-report --log-junit=phpunit-execution-result.xml
+--------------------------------------------------
+php vendor/bin/phpunit --coverage-text 
+-----------------------------------------------------
+php vendor/bin/phpunit --coverage-xml=phpunit-coverage-result.xml
+--------------------------------------------------------------
+ "autoload-dev": {
+        "psr-4": {
+            "phpprojet\\tests\\": "tests/"
+        }
+    },
+---------------------------------------------------------
+php vendor/bin/phpunit --configuration=C:\sonarqube\testun2004\phpunit.xml C:\sonarqube\testun2004\tests\MathOperationsTest.php
+---------------------------------------------------
+composer dump-autoload
+--------------------------------------
+php vendor/bin/phpunit --log-junit junit-report.xml
+
