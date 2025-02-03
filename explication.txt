@@ -1,0 +1,46 @@
+1--les métriques:Une métrique générale est une mesure utilisée pour évaluer des caractéristiques
+ d'un système de manière globale, tandis qu'une métrique logiciel se concentre spécifiquement sur
+ l'évaluation des aspects liés au développement logiciel, comme le code, le processus de développement et
+ la qualité du produit.
+2-La qualité du code fait référence à plusieurs critères qui mesurent à quel point un code est bien 
+écrit et performant. wkifma glt est une façon de parler de 
+---l'efficaciter: meni kngolo un code efficace kngolo Un code  résout un problème de manière rapide et $économique.
+---Lisibilité:La lisibilité fait référence à la facilité avec laquelle un autre développeur 
+(ou soi-même plus tard) peut lire et comprendre le code.y3ni 9dma kan lcode sahel bach it9ra wytfhm katsshal 
+sa maintenance et sa modification
+2-1-Documentation : Une bonne documentation permet aux développeurs (actuels et futurs) de comprendre
+ le fonctionnement du code, ses objectifs, son architecture, et comment l'utiliser ou le modifier
+---Portabilité : Cela fait référence à la capacité du logiciel à fonctionner sur différentes plateformes ou 
+environnements (systèmes d'exploitation, matériels, etc.).
+---La sécurité:y3ni kolma kan 3nda le code sécurisé rah ki9dr i7mina mn  les failles qui pourraient être 
+exploitées par des attaquants.ou bien les risques de compromission des données. chi 7ed ikhtare9 lina 
+----la fiabilité :Y3ni le programe i9dr ib9a khedam lina bwhd manière stable bla des erreur lwhd lmoda 
+----Nombre de bugs connus:tout simplement Cela mesure la quantité de défauts ou erreurs identifiés dans le logiciel.
+wkolma kan 3ndna un faible nombre de bugs cela indique généralement un logiciele de bon qualité
+3-Sonarqube:
+ est un outil open-source qui analyse la qualité du code source, permettant aux développeurs d'identifier et 
+de corriger les problèmes liés à la qualité, la sécurité et la performance du code.
+4-Types de Métriques avec SonarQube::
+----Densité de commentaire:nous aide à rendre le code plus compréhensible et facile à maintenir.ila kant la densité 
+d3ifa cela indique un manque de clarté f le code
+----Taux de couverture des tests unitaires::Cette métrique évalue le pourcentage de code testé 
+par des tests unitaires automatisés,y3ni kolma kan taux de coverture tal3 hdxi ki3ni beli lcode est bien tester 
+et lkhater dyl les yw93o des bugs kin9oss
+----Détection de bogues potentiels::SonarQube détecte les erreurs ou anomalies dans le code quilin t9dr tsebeb lina 
+des bogues ou des comportements indésirables.aussi qu'il peut détecter  les erreurs de syntaxe ou les vulnérabilités
+qui pourraient affecter la stabilité et la sécurité du logiciel. 
+alors l vulnérablités 
+
+5-Les Axes de la Qualité du Code avec SonarQube:
+flwr9a
+6-l'insstalation chefna les étape comment instalé sonarqube et afficher le tableau de bord
+
+
+
+
+
+
+
+
+
+
